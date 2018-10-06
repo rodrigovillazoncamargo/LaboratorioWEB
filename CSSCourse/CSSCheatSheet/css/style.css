@@ -1,0 +1,213 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
+body{
+    background-color: #f4f4f4;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight: normal;
+    /* font: normal 16px Arial, Helvetica, sans-serif; es una forma de escribirlo de manera abreviada y también funciona*/
+    line-height:1.6em;
+    margin: 0;
+
+}
+
+
+
+a{
+    /*aplica a todos los links que tengas*/
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    /*cuando los seleccionas que pasa*/
+    color:red;
+}
+
+a:active{
+    /*cuando le das click*/
+    color: green;
+}
+
+a:visited{
+    /*color:blue;*/
+}
+
+.container{
+    width:80%; /*como 500 px no se adapta al tamaño de la pantala utilizamos porcentaje y de esa mnera respondes al tamaño*/
+    margin: auto; 
+}
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border:none;
+}
+
+
+.button:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.clr{
+    clear: both;
+}
+
+.box-1{
+    background-color: #333;
+    color: #fff;
+
+    /*
+    border-right:5px red solid;
+    border-left:5px red solid;
+    border-top:5px red solid;
+    border-bottom:5px red solid;
+    */
+
+    border:5px red solid;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    /* todo lo que vayas escribiendo abajo en css va a ser lo que haga,(si al principio pusiste 10 px y luego 5px, toma el último)*/
+
+
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+.box-1 h1{
+    font-family:Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;/*transforma todo a mayusculas*/
+    letter-spacing: 0.5em;
+    word-spacing: 1em;
+
+}
+
+.box-2 {
+   border: 3px dotted #ccc;
+   padding: 20px;
+   margin: 20px 0px;
+   border-radius: 15px;
+
+}
+
+.categories{
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted black;
+    list-style-image:url('../images1/check.png') ;
+}
+
+.my-form{
+    padding:20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea,.my-form input[type="email"]{
+    /*Hicimos lo de [type""] porque solo queremos aplicarlo en el texto del boton y no en todo el boton, y en el text area porque no lo habiamos incluido*/
+    padding: 8px;
+    width: 100%;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box; /*agrega el border y el padding al tamaño de la caja para que quepa*/
+
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../images1/pgimage.jpg');
+    background-repeat: no-repeat;
+    background-position: 200px, 200px;
+    background-position: center center;
+}
+
+.p-box h2{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+
+.p-box h3{
+    position: absolute;
+    top: 400px;
+    right: 100px;
+}
+
+.fix-me{ 
+    /*se queda fijo sin importar que muevas el cursor*/
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(4){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: green;
+}
